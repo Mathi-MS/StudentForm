@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="studentform.css">
+</head>
+<body>
+    <h1>Student Form</h1>
+    <!-- tableone  -->
+    <table class="tableone">
+        <tr>
+            <th>Name</th>
+            <td><input type="text" placeholder="Mathi" id="name"></td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="number" placeholder="21" id="age" max="40"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" name="gender" value="Male" class="gender">Male
+                <input type="radio" name="gender" value="Female" class="gender">Female
+            </td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>
+                <select id="select">
+                    <option value="Html">HTML</option>
+                    <option value="Css">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Tailwind">Tailwind</option>
+                    <option value="React">React</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" placeholder="mathi@gmail.com" id="email"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="btnsave">Save</button></td>
+        </tr>
+    </table>
+    <!-- tabletwo  -->
+    <table class="tabletwo">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <script src="studentform.js"></script>
+</body>
+</html>
